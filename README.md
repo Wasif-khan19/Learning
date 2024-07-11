@@ -1,3 +1,1 @@
-we are learning full stack here 
-
-1. DOM document object model
+we are just learning here and doing practice on STACKBLITZ
