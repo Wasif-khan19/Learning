@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Muhammad Wasif</h1>
     <button id="start">Begin</button>
     <button id="stop">OK</button>
 </body>
-<script>
 
+<script>
+    let intervalId;
+
+    document.getElementById("start").addEventListener("click", function () {
+        intervalId = setInterval(function () {
+            console.log("TMKOC", Date.now());
+        }, 1000);
+    });
+
+    document.getElementById("stop").addEventListener("click", function () {
+        clearInterval(intervalId);
+    });
 </script>
+
 </html>
