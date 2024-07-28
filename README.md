@@ -10,4 +10,10 @@
 // BEST PRACTICES capital first word
 //React controll the UI updates
 
- 
+//The hydration concept is we create full layout e:g button and navbar input fields but it doesn't work untill we 
+inject javascript in it the process called hydration.
+
+// for creating a react project on vite: npm create vite@latest
+// for creating a react project : npx create-react-app
+
+//
