@@ -15,5 +15,6 @@ inject javascript in it the process called hydration.
 
 // for creating a react project on vite: npm create vite@latest
 // for creating a react project : npx create-react-app
+//Routes and reusable components
 
-//
+
