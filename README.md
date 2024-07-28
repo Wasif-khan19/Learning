@@ -17,4 +17,41 @@ inject javascript in it the process called hydration.
 // for creating a react project : npx create-react-app
 //Routes and reusable components
 
+//REACT QUESTION FOR INTERVIEW PURPOSE
+if we are creating an small project counter on click and we are using this:
+
+const function = () => {
+    const [counter, setCounter] = useState(0)
+
+    const addValue =()=>{
+        setCounter =(counter + 1)
+        setCounter =(counter + 1)
+        setCounter =(counter + 1)
+        setCounter =(counter + 1)
+    }
+    return(
+        <div>
+        <h1>ABC</h1>
+        </div>
+    )
+}
+it just increase one value on a Click.
+
+but if we use this method:
+const function = () => {
+    const [counter, setCounter] = useState(0)
+
+    const addValue =()=>{
+        setCounter =(prevCounter => prevCounter + 1)
+        setCounter =(prevCounter => prevCounter + 1)
+        setCounter =(prevCounter => prevCounter + 1)
+        setCounter =(prevCounter => prevCounter + 1)
+    }
+    return(
+        <div>
+        <h1>ABC</h1>
+        </div>
+    )
+}
+so it add 4 directly on one click
 
