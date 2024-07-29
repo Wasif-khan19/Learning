@@ -1,11 +1,10 @@
-// SignaturePad.js
 import { saveAs } from 'file-saver';
 import { useRef, useState } from 'react';
 import SignatureCanvas from 'react-signature-canvas';
 
 const SignaturePad = () => {
   const sigCanvas = useRef({});
-  const [color, setColor] = useState('#000000'); // Default color black
+  const [color, setColor] = useState('#000000');
 
   const clear = () => sigCanvas.current.clear();
   const save = () => {
