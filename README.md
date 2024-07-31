@@ -55,3 +55,5 @@ const function = () => {
 }
 so it add 4 directly on one click
 
+//when we code in core react then we can write window directly because of SSR and CSR
+
