@@ -196,7 +196,7 @@ function App() {
                 setCharacterAllowed((prev) => !prev);
               }}
             />
-          </div>v 
+          </div>
         </div>
       </div>
     </>
