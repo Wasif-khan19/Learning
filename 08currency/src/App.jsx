@@ -7,7 +7,7 @@ function App() {
       <h1 className='text-white'>Muhammad</h1>
     </div>
     </>
-  )
+  ) 
 }
-
+  
 export default App
