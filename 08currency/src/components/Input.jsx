@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import {useId} from 'react'
+import { useId } from 'react';
 
-function InputBox({
+export function InputBox({
   label,
   amount,
   onAmountChange,
