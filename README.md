@@ -60,3 +60,36 @@ so it add 4 directly on one click
 
 //whem we sue <a> tag instead of link the complete page will refresh so, we use link tag
 //
+
+routing methods:
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout/>,
+    children:[
+      {
+        path: '',
+        element: <Home/>
+      },
+      {
+        path: '/about',
+        element: <About/>
+      },
+      {
+        path: '/contact',
+        element: <Contact/>
+      }
+    ]
+  }
+])
+
+//this one we can also use
+
+const router = useBrowserRouter(
+    createRoutesFromElement(
+        <Route path ='/' element ={<Layout/>}>
+        <Route path = '' element ={<Home/>}/>
+        </Route?>
+
+    )
+)
