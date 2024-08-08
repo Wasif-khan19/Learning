@@ -93,3 +93,6 @@ const router = useBrowserRouter(
 
     )
 )
+
+//for creating a context in RTX first use React.createContext()
+
