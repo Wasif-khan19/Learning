@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { ThemeProvider } from "./context/Theme";
+
 import ThemeBtn from "./components/ThemeButton";
 import Card from "./components/Card";
+import { ThemeProvider } from "./context/Theme";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("");
-
+  const [themeMode, setThemeMode] = useState(
+  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light"
+  );
   const lightTheme = () => {
     setThemeMode("light");
   };
 
   const darkTheme = () => {
-    setThemeMode("dark ");
+    setThemeMode("dark");
   };
 
   useEffect(() => {
