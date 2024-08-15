@@ -97,3 +97,5 @@ const router = useBrowserRouter(
 //for creating a context in RTX first use React.createContext()
 
 //we create index file most of the time because we take all import here and then use it.
+
+//redux is independent state management library
