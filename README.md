@@ -99,3 +99,5 @@ const router = useBrowserRouter(
 //we create index file most of the time because we take all import here and then use it.
 
 //redux is independent state management library
+
+//the syntax always use and we have always have access of it: STATE, ACTION 
